@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e8faff, #e1dff8);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    animation: fadeInDown 1s ease-out;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+/* Section Titles */
+section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: #444;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #2575fc;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 600px;
+    text-align: justify;
+    color: #555;
+}
+
+/* Skills Section */
+#skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 0;
+    text-align: center;
+}
+
+#skills ul li {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+#skills ul li:hover {
+    transform: translateY(-5px);
+    background: #2575fc;
+    color: white;
+}
+
+/* Projects Section */
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    background: #f8f9fa;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #2575fc;
+}
+
+.project p {
+    color: #555;
+    text-align: justify;
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1em;
+    text-align: center;
+    color: #444;
+}
+
+#contact a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
